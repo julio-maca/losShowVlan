@@ -20,9 +20,16 @@
 			<i class="icono izquierda fa fa-lock"></i><input type="password" class="password" name="password" placeholder="Contraseña">
 		</div>
 		<div class="form-group">
-			<i class="icono izquierda fa fa-lock"></i><input type="password" name="password2 " class="password_btn" placeholder="Repetir Conraseña">
+			<i class="icono izquierda fa fa-lock"></i><input type="password" name="password2"  class="password_btn"  placeholder="Repetir Conraseña">
 			<i class="submit-btn fa fa-arrow-right" onclick="login.submit()"></i>
 		</div>
+		<?php  if(!empty($errores)):?>
+			<div class="error">
+				<ul>
+					<?php echo $errores;?>
+				</ul>
+			</div>
+		<?php  endif;?>
 	</form>
 
 	<p class="texto-registrate">
