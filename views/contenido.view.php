@@ -32,7 +32,13 @@
 			</article>
 		</div>
 
+<<<<<<< HEAD
 	
+=======
+		<p> Hola Julio...........</p>
+		<p> Hola Julio...........</p>
+
+>>>>>>> 86d34988bcb5480f454c5b4b3beda0aeb9b969bc
 
 
 	</div>
