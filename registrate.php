@@ -9,6 +9,13 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
     $password2=$_POST['password2'];
 
     echo "$usuario . $password . $password2";
+
+    $errores = '';
+
+    if (empty($usuario) or empty($password) or empty($password2)) {
+        $errores .= '<li>Por favor rellena todos los campos correctamente</li>';
+
+    }
 }
 require 'views/registrate.view.php';
 
